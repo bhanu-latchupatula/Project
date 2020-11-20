@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container">
+        <div id="box-1">
+            <div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="flow_inlet">Flow Inlet</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="flow_inlet" name="flow_inlet" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="heat_inlet">Heat Duty Inlet</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="heat_inlet" name="heat_inlet" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="initial_level">Initial Value(Level)</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="initial_level" name="initial_level" required>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="iterations">Iterations</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="iterations" name="iterations" value="1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25"></div>
+                    <div class="col-75">
+                        <button id="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <canvas id="box-2" style="max-height:430px; height: auto; margin-right: auto; margin-left: auto;"></canvas>
+            <canvas id="box-3" style="max-height:430px; height: auto; margin-right: auto; margin-left: auto;"></canvas>
+    </div>
+{% endblock content %}
